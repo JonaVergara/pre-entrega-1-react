@@ -1,0 +1,28 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #24292c ;
+    width: 100%;
+    color: aliceblue;
+    
+}
+.brand {
+    width: 8%;
+    display: flex;
+    align-items: center;
+}
+
+.brand p {
+    font-weight: bold;
+}
+.brand-img {
+    width:100%;
+    object-fit: cover;
+}
+
+.categories {
+    display: flex;
+    list-style: none;
+    width: 75%;
+    justify-content: space-around;
+}

@@ -2,32 +2,36 @@ import logo from "../../img/logo-tennis-pro.png"
 import "./navbar.css"
 import CartWidget from "../CartWidget/CartWidget"
 import { LiaLandmarkSolid } from "react-icons/lia"
+import { Link } from "react-router"
 
 const NavBar = () => {
   const categories = [
     {
       id: 1,
-      label: "Raquetas"
+      label: "Head",
+      path: "head"
     },
     {
       id: 2,
-      label: "Cuerdas"
+      label: "Babolat",
+      path: "babolat"
     },
     {
       id: 3,
-      label: "Bolsos"
+      label: "Wilson",
+      path: "wilson"
     }
   ]
   return (
     <nav className="navbar">
-        <div className="brand">
+        <Link to="/" className="brand">
             <img src={logo} className="brand-img" alt="" />
             <p>TennisPro</p>
-        </div>
+        </Link>
         <ul className="categories">
           {
-            categories.map( (category =>(
-              <li key={category.id} >{category.label} </li>
+            categories.map( (brand =>(
+              <li key={brand.id}> <Link to={`/brand/${brand.path}`}>{brand.label}</Link> </li>
             )))
           }
         </ul>

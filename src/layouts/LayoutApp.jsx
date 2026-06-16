@@ -1,13 +1,17 @@
 import NavBar from "../components/NavBar/NavBar";
+import Footer from "../components/Footer/Footer";
+import { Outlet } from "react-router";
+import "./layout.css"
 
 const LayoutApp = ({children}) => {
   return (
-    <>
-        <NavBar/>
-        <main>
-            {children}
+    <div className="layout">
+      <NavBar/>
+        <main className="main-content">
+            <Outlet/>
         </main>
-    </>
+      <Footer/>
+    </div>
   )
 }
 

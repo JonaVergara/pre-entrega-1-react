@@ -1,22 +1,30 @@
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
-    background-color: #24292c ;
+    background-color: #24292c;
     width: 100%;
     color: aliceblue;
-    
+    padding: 0 2rem;
+    height: 64px;
 }
+
 .brand {
     width: 8%;
     display: flex;
     align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: white;
 }
 
 .brand p {
     font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
 }
+
 .brand-img {
-    width:100%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -24,5 +32,43 @@
     display: flex;
     list-style: none;
     width: 75%;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.categories li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 0.4rem 0.8rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.categories li a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
+}
+
+.categories li a:hover {
+    color: #4caf50;
+}
+
+.categories li a:hover::after {
+    width: 100%;
+}
+
+.categories li a.active {
+    color: white;
+    border-bottom: 2px solid #2e7d32;
 }

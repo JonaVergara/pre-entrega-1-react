@@ -1,20 +1,12 @@
-
 import './App.css'
-import NavBar from './components/NavBar/NavBar'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-import LayoutApp from './layouts/LayoutApp'
-import HomePage from './pages/HomePage'
+import { RouterProvider } from 'react-router'
+import { router } from './router' 
 
 function App() {
 
 return (
     <div>
-      <LayoutApp>
-        <HomePage/>
-      </LayoutApp>
-  
-
-   
+      <RouterProvider router={router}/>
     </div>
   )
 }

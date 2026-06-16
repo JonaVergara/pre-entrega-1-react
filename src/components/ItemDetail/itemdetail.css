@@ -1,0 +1,93 @@
+.item-detail {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.item-img-container {
+    flex: 1;
+    margin: 1rem;
+    text-align: center;
+}
+
+.item-img-container img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    flex: 1;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.item-name {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.item-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+    margin: 0;
+    max-width: 480px;
+    border-left: 3px solid #2e7d32;
+    padding-left: 1rem;
+}
+
+.item-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2e7d32;
+    margin: 0;
+}
+
+.item-counter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.item-counter button {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.item-counter button:hover {
+    background: #f0f0f0;
+}
+
+.item-counter span {
+    font-size: 1.2rem;
+    min-width: 24px;
+    text-align: center;
+}
+
+.item-add-btn {
+    padding: 0.8rem 1.5rem;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.item-add-btn:hover {
+    background: #1b5e20;
+}
